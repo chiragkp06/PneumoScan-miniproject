@@ -15,6 +15,7 @@ app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 from .auth import auth_bp
 from .upload import upload_bp
 from .results import results_bp
+from .rekognition_service import rekognition_client  # Import Rekognition client
 
 # Register blueprints with specific URL prefixes
 app.register_blueprint(auth_bp, url_prefix='/auth')
