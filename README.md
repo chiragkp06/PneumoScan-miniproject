@@ -25,8 +25,3 @@ This project is a cloud-based application designed to help **radiologists** dete
 1. You need to have **Python 3.x** installed on your machine.
 2. You will need an **AWS account** for using services like Rekognition, S3, and RDS.
 
-### Installation
-
-1. Clone this repository to your local machine:
-   ```bash
-   git clone https://github.com/your-username/MiniProject.git
