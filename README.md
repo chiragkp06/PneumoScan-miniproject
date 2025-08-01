@@ -1,27 +1,32 @@
-# Cloud-Based Pneumonia Detection
+Cloud-Based Pneumonia Detection
+🩺 Overview
+This is a cloud-based web application designed to assist radiologists in detecting pneumonia from chest X-ray images using machine learning and AWS cloud services. It automates the process of uploading, analyzing, and storing medical images and results.
 
-## Overview
-This project is a cloud-based application designed to help **radiologists** detect **pneumonia** from chest X-ray images using machine learning and cloud services. The application leverages AWS services like **Rekognition**, **S3**, and **RDS** to process and store the images and results. 
+🎯 Project Objective
+Enable radiologists to upload chest X-ray images and get automated pneumonia detection with a confidence score.
 
-## Project Objective
-- To build a web-based system where users (radiologists) can upload chest X-ray images and receive pneumonia detection results.
-- The system will indicate if pneumonia is detected and provide a confidence score based on the analysis.
-- The results will be stored in an **RDS database** and displayed on a web interface, with downloadable reports for the radiologists.
+Display results clearly on a secure dashboard and allow downloading of medical reports.
 
-## Tech Stack
-- **Frontend**: (Include details of the technologies used, e.g., HTML/CSS,JS etc.)
-- **Backend**: Python, Flask
-- **AWS Services**: 
-  - **AWS Rekognition** for image analysis
-  - **AWS S3** for storing images
-  - **AWS RDS** for storing results and other relevant data
-- **Other**: 
-  - Python libraries (Flask, boto3, etc.)
-  - Environment Variables: .env for sensitive information
+Store all image data and results securely using AWS RDS and S3.
 
-## Setup Instructions
+🛠️ Tech Stack
+🔹 Frontend
+HTML5
+CSS3
+JavaScript
+Responsive UI designed for desktop-first usage
 
-### Prerequisites
-1. You need to have **Python 3.x** installed on your machine.
-2. You will need an **AWS account** for using services like Rekognition, S3, and RDS.
+🔹 Backend
+Python 3
+Flask (REST API)
+MySQL (AWS RDS)
 
+🔹 AWS Services
+Amazon Rekognition – to detect pneumonia from X-ray images
+Amazon S3 – to store uploaded images securely
+Amazon RDS (MySQL) – to store user data and detection results
+
+🔹 Other Tools
+boto3 (AWS SDK for Python)
+
+dotenv – for managing API keys and secrets using a .env file
