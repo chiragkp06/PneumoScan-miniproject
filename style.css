@@ -1,0 +1,30 @@
+/* style.css */
+
+/* Smooth transitions */
+button,
+input[type="file"],
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  transition: all 0.2s ease-in-out;
+}
+
+/* File input cursor */
+input[type="file"]::-webkit-file-upload-button {
+  cursor: pointer;
+}
+
+/* Scrollbar polish */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+}
+
+/* Disabled buttons */
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

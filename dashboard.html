@@ -1,0 +1,59 @@
+<!-- frontend/dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - PneumoScan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md p-4 flex justify-between items-center">
+    <div class="flex items-center space-x-2">
+      <img src="https://img.icons8.com/color/96/hospital.png" class="h-8 w-8" />
+      <h1 class="text-xl font-bold text-blue-700">PneumoScan</h1>
+    </div>
+    <a href="/logout" class="text-sm bg-red-500 text-white px-4 py-1 rounded hover:bg-red-600 transition">Logout</a>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-3xl mx-auto py-12 px-4">
+    <h2 class="text-2xl font-semibold mb-4 text-center text-blue-800">X-ray Pneumonia Detector</h2>
+    <p class="text-center text-gray-600 mb-8">Upload a chest X-ray to analyze for pneumonia using AI.</p>
+
+    <div class="bg-white p-6 rounded-xl shadow-lg">
+      <input type="file" id="imageInput" accept="image/*" class="mb-4 block w-full text-sm file:bg-blue-600 file:text-white file:py-2 file:px-4 file:rounded file:border-0 hover:file:bg-blue-700"/>
+
+      <button onclick="uploadImage()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded shadow">
+        Upload & Analyze
+      </button>
+
+      <!-- Loader -->
+      <div id="loader" class="mt-4 hidden text-center">
+        <svg class="animate-spin h-6 w-6 mx-auto text-blue-600" fill="none" viewBox="0 0 24 24">
+          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"></path>
+        </svg>
+        <p class="text-blue-600 mt-2 text-sm">Analyzing...</p>
+      </div>
+
+      <!-- Result -->
+      <div id="result" class="mt-4 text-center text-lg font-medium text-gray-800"></div>
+
+      <!-- Preview -->
+      <div class="mt-4">
+        <img id="preview" class="mx-auto max-h-64 rounded-xl shadow hidden" />
+      </div>
+    </div>
+  </main>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>

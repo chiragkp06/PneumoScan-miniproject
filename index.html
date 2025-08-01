@@ -1,0 +1,119 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PneumoScan - AI Pneumonia Detection</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <img src="https://img.icons8.com/color/96/hospital.png" class="h-8 w-8" />
+        <h1 class="text-xl font-bold text-blue-700">PneumoScan</h1>
+      </div>
+      <nav class="space-x-4 text-sm">
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#features" class="hover:text-blue-600">Features</a>
+        <a href="#faq" class="hover:text-blue-600">FAQ</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+        <a href="login.html" class="text-blue-700 font-medium hover:underline">Login</a>
+        <a href="register.html" class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">Register</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-blue-100 to-white py-20">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+      <div>
+        <h2 class="text-4xl font-extrabold text-blue-800 mb-4">AI-Driven Pneumonia Detection</h2>
+        <p class="text-gray-700 mb-6">Upload chest X-rays and receive instant preliminary results using our AI-powered tool. Built by CSE students with healthcare in mind.</p>
+        <a href="login.html" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700">Get Started</a>
+      </div>
+      <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/512/external-xray-healthcare-flaticons-flat-flat-icons.png" class="max-w-sm mx-auto" />
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold text-blue-700 mb-4">About PneumoScan</h3>
+      <p class="text-gray-600 mb-4">PneumoScan is a cloud-enabled AI tool designed for academic research and rapid clinical screening. It demonstrates the power of computer vision in diagnosing pneumonia through X-ray analysis using Flask backend and cloud tools (like AWS Rekognition).</p>
+      <p class="text-gray-500">This tool is not meant for real-time medical diagnosis but can serve as a prototype for future healthcare innovation.</p>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold text-blue-700 mb-12">Features</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-md">
+          <img src="https://img.icons8.com/color/96/xray.png" class="h-16 mx-auto mb-4" />
+          <h4 class="text-lg font-semibold mb-2">Fast Detection</h4>
+          <p class="text-gray-600">Upload and analyze chest X-rays within seconds using a clean, fast interface.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-md">
+          <img src="https://img.icons8.com/color/96/ai.png" class="h-16 mx-auto mb-4" />
+          <h4 class="text-lg font-semibold mb-2">AI Powered</h4>
+          <p class="text-gray-600">Utilizes cloud-based AI models to detect and highlight pneumonia signs.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-md">
+          <img src="https://img.icons8.com/ios-filled/100/hospital-room.png" class="h-16 mx-auto mb-4" />
+          <h4 class="text-lg font-semibold mb-2">Easy Integration</h4>
+          <p class="text-gray-600">Designed to integrate with small clinics and hospitals for testing use cases.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold text-blue-700 mb-8">FAQs</h3>
+      <div class="text-left space-y-4">
+        <details class="p-4 border rounded">
+          <summary class="cursor-pointer font-semibold text-gray-700">What kind of images can I upload?</summary>
+          <p class="mt-2 text-gray-600">JPG, JPEG, PNG formats of chest X-rays only.</p>
+        </details>
+        <details class="p-4 border rounded">
+          <summary class="cursor-pointer font-semibold text-gray-700">Is this tool certified for diagnosis?</summary>
+          <p class="mt-2 text-gray-600">No, it is strictly for educational and research use, not clinical decisions.</p>
+        </details>
+        <details class="p-4 border rounded">
+          <summary class="cursor-pointer font-semibold text-gray-700">Do I need to sign up?</summary>
+          <p class="mt-2 text-gray-600">Yes, only registered users can access the detection tool after logging in.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-gray-100 text-center">
+    <div class="max-w-2xl mx-auto px-4">
+      <h3 class="text-3xl font-bold text-blue-700 mb-4">Contact & Feedback</h3>
+      <p class="text-gray-600 mb-4">We welcome doctors, students, and mentors to provide feedback.  </p>
+      <a href="https://forms.gle/your-survey-link" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded shadow">
+        Fill Survey Form
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white text-center py-6 text-sm text-gray-500 border-t mt-10">
+    <p>&copy; 2025 PneumoScan</p>
+  </footer>
+
+</body>
+</html>
+    
