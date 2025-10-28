@@ -1,7 +1,7 @@
-Cloud-Based Pneumonia Detection
+<p> Cloud-Based Pneumonia Detection </p>
 
 Overview
-- <b>This is a cloud-based web application designed to assist radiologists in detecting pneumonia from chest X-ray images using machine learning and AWS cloud services. It automates the process of uploading, analyzing, and storing medical images and results. <b>
+- <b>This is a cloud-based web application designed to assist radiologists in detecting pneumonia from chest X-ray images using machine learning and AWS cloud services. It automates the process of uploading, analyzing, and storing medical images and results. </b>
 
 Project Objective
 - Enable radiologists to upload chest X-ray images and get automated pneumonia detection with a confidence score.
