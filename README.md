@@ -11,21 +11,21 @@ Display results clearly on a secure dashboard and allow downloading of medical r
 Store all image data and results securely using AWS RDS and S3.
 
 Tech Stack
-Frontend
-HTML5
-CSS3
-JavaScript
-Responsive UI designed for desktop-first usage
+- Frontend
+- HTML5
+- CSS3
+- JavaScript
+
 
 Backend
-Python 3
-Flask (REST API)
-MySQL (AWS RDS)
+- Python 3
+- Flask (REST API)
+- MySQL (AWS RDS)
 
 AWS Services
-Amazon Rekognition – to detect pneumonia from X-ray images
-Amazon S3 – to store uploaded images securely
-Amazon RDS (MySQL) – to store user data and detection results
+- Amazon Rekognition – to detect pneumonia from X-ray images
+- Amazon S3 – to store uploaded images securely
+- Amazon RDS (MySQL) – to store user data and detection results
 
 Other Tools
 boto3 (AWS SDK for Python)
