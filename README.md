@@ -4,11 +4,9 @@ Overview
 This is a cloud-based web application designed to assist radiologists in detecting pneumonia from chest X-ray images using machine learning and AWS cloud services. It automates the process of uploading, analyzing, and storing medical images and results.
 
 Project Objective
-Enable radiologists to upload chest X-ray images and get automated pneumonia detection with a confidence score.
-
-Display results clearly on a secure dashboard and allow downloading of medical reports.
-
-Store all image data and results securely using AWS RDS and S3.
+i) Enable radiologists to upload chest X-ray images and get automated pneumonia detection with a confidence score.
+ii) Display results clearly on a secure dashboard and allow downloading of medical reports.
+iii) Store all image data and results securely using AWS RDS and S3.
 
 Tech Stack
 - Frontend
