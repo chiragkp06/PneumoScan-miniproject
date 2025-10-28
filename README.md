@@ -14,7 +14,6 @@ Tech Stack
 - CSS3
 - JavaScript
 
-
 Backend
 - Python 3
 - Flask (REST API)
@@ -24,8 +23,6 @@ AWS Services
 - Amazon Rekognition – to detect pneumonia from X-ray images
 - Amazon S3 – to store uploaded images securely
 - Amazon RDS (MySQL) – to store user data and detection results
-
-Other Tools
-boto3 (AWS SDK for Python)
+- boto3 (AWS SDK for Python)
 
 dotenv – for managing API keys and secrets using a .env file
